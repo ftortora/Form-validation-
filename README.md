@@ -17,12 +17,11 @@ if (!isValid) {
   return; // 👈 Blocca l’invio del form
 }
 
-
 Se qualcosa non è valido, il form non viene inviato e viene mostrato un messaggio di errore.
 
 Il form raccoglie i dati dell’utente, li controlla e li salva. La validazione avviene in tempo reale mentre si digita e l’invio viene bloccato in caso di errore.
 
-📁 I 3 FILE
+I 3 FILE
 
 index.html: forma la struttura e i campi del form.
 
@@ -30,7 +29,7 @@ main.js: controlla i dati e gestisce l’invio.
 
 style.css: gestisce colori, animazioni e design responsivo.
 
-🔍 COME FUNZIONA
+COME FUNZIONA
 
 Controlli Password: verifica lunghezza, presenza di maiuscola, numero e simbolo. Mostra ✓ verde o ✗ rossa mentre si digita.
 
@@ -44,7 +43,7 @@ Inviare: i dati vengono spediti a un server remoto.
 
 Risposta: viene mostrato un messaggio di successo o di errore.
 
-🧩 REGOLE DI VALIDAZIONE
+REGOLE DI VALIDAZIONE
 
 Nome/Cognome: minimo 2 caratteri, solo lettere.
 
@@ -72,13 +71,13 @@ Se errore → mostra errore e STOP
 ↓
 Se tutto è ok → salva localmente + invia al server + mostra messaggio di successo
 
-🎨 DESIGN
+DESIGN
 
 Bootstrap: utilizzato per garantire un design responsive e uno stile moderno.
 
 CSS personalizzato: ottimizzato per tutti i dispositivi con approccio mobile-first, curando l’esperienza utente su smartphone e tablet.
 
-📚 MATERIALI PER LO STUDIO DELL’ESPERIENZA UTENTE
+MATERIALI PER LO STUDIO DELL’ESPERIENZA UTENTE
 
 DesignLab – Form UI Design Best Practices
 
@@ -86,7 +85,7 @@ Medium – Email Validation with JavaScript Regex
 
 UI Bakery – Regex Library for Passwords
 
-🔗 RISORSE
+RISORSE
 
 MDN Web Docs – HTML: riferimento completo per tutti i tag HTML usati (es. <form>, <input>, <label>).
 
@@ -100,7 +99,7 @@ MDN Web Docs – Local Storage: documentazione su localStorage e i metodi setIte
 
 dummyjson.com: documentazione sull’API di test utilizzata per l’endpoint di aggiunta utenti (/users/add).
 
-📘 APPROFONDIMENTI TECNICI
+APPROFONDIMENTI TECNICI
 
 Validazione con Regex: tutorial e riferimenti sulle espressioni regolari in JavaScript, utili per comprendere la validazione di firstName, postalCode, username e password.
 
