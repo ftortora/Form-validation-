@@ -97,7 +97,11 @@ MDN Web Docs – Fetch API: guida all’uso della funzione fetch() per le richie
 
 MDN Web Docs – Local Storage: documentazione su localStorage e i metodi setItem() e getItem() usati per salvare i dati di registrazione e la risposta API.
 
+ MDN Web Docs - Mozilla - throw - JavaScript - L'istruzione throw genera un'eccezione definita dall'utente. L'esecuzione della funzione corrente verrà interrotta (le istruzioni successive a throw non verranno eseguite) e il controllo verrà passato al primo blocco catch nello stack delle chiamate. Se non esiste alcun blocco catch tra le funzioni chiamanti, il programma terminerà.
+
 dummyjson.com: documentazione sull’API di test utilizzata per l’endpoint di aggiunta utenti (/users/add).
+
+https://youtu.be/JiAti4UurGs?si=PVr538PnMxHLtFeQ 
 
 APPROFONDIMENTI TECNICI
 
