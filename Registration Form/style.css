@@ -1,0 +1,260 @@
+:root {
+  --bs-primary: #007bff;
+  --bs-secondary: #6c757d;
+  --bs-danger: #dc3545;
+  --bs-success: #28a745;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f2f5 0%, #e8eaed 100%);
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.form-control.error-input {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.form-control.success-input {
+  border-color: #28a745;
+  background-color: #f5fff5;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.75rem;
+  display: none !important;
+  margin-top: 0.25rem;
+}
+
+.invalid-feedback.show {
+  display: block !important;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 0.75rem;
+  display: none;
+  margin-top: 0.25rem;
+}
+
+.success-message.show {
+  display: block !important;
+}
+
+.password-reqs {
+  background: #f8f9fa;
+  border-left: 3px solid #007bff;
+}
+
+.req-item {
+  margin: 0.5rem 0;
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+.req-item i {
+  width: 16px;
+  margin-right: 0.5rem;
+}
+
+.req-item.ok {
+  color: #28a745;
+}
+
+.req-item.ok i {
+  color: #28a745;
+}
+
+.form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.125rem;
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.form-check-label {
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #e9ecef;
+  border: none;
+  color: #212529;
+}
+
+.btn-secondary:hover {
+  background: #dee2e6;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.toast {
+  background: #dc3545 !important;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toast.success {
+  background: #28a745 !important;
+}
+
+.toast-body {
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.progress-bar-simple {
+  height: 4px;
+  background: linear-gradient(to right, #28a745, #007bff);
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.tooltip-hint {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .card-body {
+    padding: 1.5rem !important;
+  }
+
+  .form-control {
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .gap-2 {
+    gap: 0.5rem !important;
+  }
+}
